@@ -46,7 +46,7 @@ prometheus:
 
 graf-db:
     tty: true
-    image: infinityworks/graf-db:11
+    image: yatryan/graf-db
     command: cat
     volumes:
       - grafana-data:/var/lib/grafana/

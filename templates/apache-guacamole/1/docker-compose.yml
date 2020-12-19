@@ -42,9 +42,9 @@ guacamole:
     MYSQL_DATABASE: ${guacamole_db}
     MYSQL_HOSTNAME: database
     MYSQL_PASSWORD: ${guacamole_password}
-    MYSQL_USER: ${guacamole_user}
+    MYSQL_USERNAME: ${guacamole_user}
     ACCEPT_EULA: "Y"
-    GUACD_HOST: guacd
+    GUACD_HOSTNAME: guacd
   links:
    - guacd:guacd
   ports:

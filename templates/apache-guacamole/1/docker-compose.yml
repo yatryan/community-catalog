@@ -22,7 +22,7 @@ database:
 setup-get-db-script:
   image: glyptodon/guacamole:2
   environment:
-    ACCEPT_EULA: Y
+    ACCEPT_EULA: "Y"
   net: none
   volumes_from:
     - database-data
@@ -35,7 +35,7 @@ setup-get-db-script:
 guacd:
   image: glyptodon/guacd:2
   environment:
-    ACCEPT_EULA: Y
+    ACCEPT_EULA: "Y"
 guacamole:
   image: glyptodon/guacamole:2
   environment:
@@ -43,7 +43,7 @@ guacamole:
     MYSQL_HOSTNAME: database
     MYSQL_PASSWORD: ${guacamole_password}
     MYSQL_USER: ${guacamole_user}
-    ACCEPT_EULA: Y
+    ACCEPT_EULA: "Y"
     GUACD_HOST: guacd
   links:
    - guacd:guacd

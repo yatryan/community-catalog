@@ -34,6 +34,8 @@ setup-get-db-script:
     io.rancher.container.start_once: 'true'
 guacd:
   image: glyptodon/guacd:2
+  environment:
+    ACCEPT_EULA: Y
 guacamole:
   image: glyptodon/guacamole:2
   environment:
